@@ -6,8 +6,9 @@ let pigLatin = function(userInput) {
   let firstVowelPosition = userInput.indexOf(firstVowel);
 
   if(userInput.length === 1 && firstVowelPosition === 0) {
-    userInput = userInput + 'way';
-    return userInput;
+    return userInput + 'way';
+  } else if(firstVowelPosition === 0) {
+    return userInput + 'yay'
   }
 
 
