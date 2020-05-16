@@ -1,19 +1,28 @@
 // business logic
 let pigLatin = function(userInput) {
 
-  let regexVowels = /[aeiou]/;
-  let firstVowel = userInput.match(regexVowels);
-  let firstVowelPosition = userInput.indexOf(firstVowel);
+  let words = userInput.split(' ');
+  console.log(words);
+  let newWords = [];
 
-  if(userInput.length === 1 && firstVowelPosition === 0) {
-    return userInput + 'way';
-  } else if(firstVowelPosition === 0) {
-    return userInput + 'yay';
-  } else if (userInput.charAt(0) === 'q' && userInput.charAt(1) === 'u') {
-    return userInput.slice(2) + userInput.slice(0, 2) + 'ay';
-  } else {
-    return userInput.slice(firstVowelPosition) + userInput.slice(0, firstVowelPosition) + 'ay'
-  }
+  words.forEach(function(word) {
+
+    let regexVowels = /[aeiou]/;
+    let firstVowel = word.match(regexVowels);
+    let firstVowelPosition = word.indexOf(firstVowel);
+
+    if(word.length === 1 && firstVowelPosition === 0) {
+      newWords.push(word + 'way');
+    } else if(firstVowelPosition === 0) {
+      newWords.push(word + 'yay');
+    } else if (word.charAt(0) === 'q' && word.charAt(1) === 'u') {
+      newWords.push(word.slice(2) + word.slice(0, 2) + 'ay');
+    } else {
+      newWords.push(word.slice(firstVowelPosition) + word.slice(0, firstVowelPosition) + 'ay');
+    }
+  });
+  console.log(newWords);
+  return newWords.join(' ') + '.';;
 }
 
 // user interface

@@ -17,7 +17,7 @@ Use BDD to write specifications for a program that will return user sentence in 
 
 ## Known Bugs
 
-At this time there are no known bugs.
+Specs 9 and 10 are not yet met.
 
 ## Pig Latin Rules
 * For words beginning with a vowel, add "way" to the end.
@@ -34,7 +34,7 @@ At this time there are no known bugs.
 * Input Example: p4#nts
 * Output Example: p4#nts
 
-#### Spec 2
+#### Spec 2 (Spec 2 is met when Spec 1 is met)
 * Behavior: The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
 * Input Example: 3
 * Output Example: 3
@@ -49,7 +49,7 @@ At this time there are no known bugs.
 * Input Example: am
 * Output Example: amYay
 
-#### Spec 5
+#### Spec 5 (Spec 5 is met when Spec 6 is met)
 * Behavior: The program will treat "y" like a consonant, move it to the end, then add "ay"
 * Input Example: year
 * Output Example: earYay
@@ -73,9 +73,14 @@ At this time there are no known bugs.
 * Output Example: IWay amyay ittBray
 
 #### Spec 9
-* Behavior:  Program will return a string with first letter capitalized and following letters in lowercase
+* Behavior:  Program will return a string with first letter capitalized and following letters in lowercase.
 * Input Example: hEllo
 * Output Example: Ellohay
+
+#### Spec 10
+* Behavior:  Program will return a string with special characters in the appropriate places.
+* Input Example: Hello, my name is Brittany.
+* Output Example: Ellohay, ymay amenay isyay ittanybray.
 
 ## Support and contact details
 
