@@ -38,16 +38,3 @@ $(document).ready(function() {
 
   });
 });
-
-
-// original business logic, discarded at time of refactoring
-  // if the length of the user input is one /array.length = 1 / then do the thing below
-  // let vowels = ['a', 'i', 'u', 'e', 'o'];
-  // may want a consonants array as well as an empty array to hold the characters of the words the user passed in
-//   let newWord;
-//   vowels.forEach(function(vowel) {
-//     if(userInput === vowel) {
-//       newWord = userInput + 'way';
-//     }
-//   });
-//   return newWord; 

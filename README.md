@@ -99,4 +99,4 @@ Please feel free to contact me through GitHub with any questions, ideas or conce
 
 *This site is licensed under the MIT license.*
 
-Copyright (c) 2020 **_Brittany A Lindgren_**
+Copyright (c) 2020 **_Brittany A Lindgren && Manny Lopez_**
